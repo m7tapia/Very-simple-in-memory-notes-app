@@ -1,8 +1,5 @@
 package com.rest.notes.model;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Note {
     private Long id;
     private String title;
