@@ -1,0 +1,2 @@
+# Very-simple-in-memory-notes-app
+A simple Spring Boot REST API for creating, reading, updating, and deleting notes. Built using Maven and an in‑memory storage system (HashMap), this project serves as my starting point for learning Spring Boot fundamentals, REST controllers, JSON handling, and basic project structure with Maven.
