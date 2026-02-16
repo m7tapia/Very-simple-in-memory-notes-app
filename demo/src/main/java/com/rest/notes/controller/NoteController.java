@@ -16,7 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 @RequestMapping("/notes")
 public class NoteController {
-    private final InMemoryNoteStorage noteStorage = new InMemoryNoteStorage();
+    private final InMemoryNoteStorage noteStorage;
+
+    public NoteController(InMemoryNoteStorage noteStorage) {
+        this.noteStorage = noteStorage; // Dependency injection of the storage component
+    }
 
     @PostMapping()
     public Note create(@RequestBody Note note) {

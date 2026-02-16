@@ -4,7 +4,9 @@ import com.rest.notes.model.Note;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class InMemoryNoteStorage {
 
     private final Map<Long, Note> notes = new HashMap<>();
